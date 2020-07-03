@@ -1,0 +1,13 @@
+package Model;
+
+public class Chefe extends Funcionario {
+
+	private float salarioBase;
+	private float adcionalFuncao;
+	private float beneficioTerno;
+	
+	public Chefe() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

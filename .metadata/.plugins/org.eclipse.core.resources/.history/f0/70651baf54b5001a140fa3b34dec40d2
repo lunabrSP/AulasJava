@@ -1,0 +1,21 @@
+package UserInterface;
+
+import Model.Chefe;
+import Model.Funcionario;
+import Model.Comissionado;
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Funcionario> Funcionarios;
+		
+		Funcionarios = new ArrayList<Funcionario>();
+		
+		Funcionarios.add ( new Chefe(987298614, "Raphael", 17000, (float) .67, 150));
+		
+		
+	}
+
+}

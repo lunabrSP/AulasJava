@@ -1,0 +1,9 @@
+package Model;
+
+public class Horista {
+
+	public Horista() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

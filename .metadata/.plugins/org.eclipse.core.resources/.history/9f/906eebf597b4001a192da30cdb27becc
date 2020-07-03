@@ -1,0 +1,77 @@
+
+public class CartaoPP {
+
+	protected String numeroCartao;
+	protected String nomeTitular;
+	protected String anoValidade;
+	protected String mesValidade;
+	protected double saldo;
+	
+	protected CartaoPP(String numeroCartao, String nomeTitular, String anoValidade, String mesValidade, double saldo) {
+		this.numeroCartao = numeroCartao;
+		this.nomeTitular = nomeTitular;
+		this.anoValidade = anoValidade;
+		this.mesValidade = mesValidade;
+		this.saldo = saldo;
+	}
+
+	protected String getNumeroCartao() {
+		return numeroCartao;
+	}
+
+	protected void setNumeroCartao(String numeroCartao) {
+		this.numeroCartao = numeroCartao;
+	}
+
+	protected String getNomeTitular() {
+		return nomeTitular;
+	}
+
+	protected void setNomeTitular(String nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	protected String getAnoValidade() {
+		return anoValidade;
+	}
+
+	protected void setAnoValidade(String anoValidade) {
+		this.anoValidade = anoValidade;
+	}
+
+	protected String getMesValidade() {
+		return mesValidade;
+	}
+
+	protected void setMesValidade(String mesValidade) {
+		this.mesValidade = mesValidade;
+	}
+
+	protected double getSaldo() {
+		return saldo;
+	}
+
+	protected void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public void adcionarCredito(double valor) {
+		if (valor >0 ) {
+			
+			setSaldo(getSaldo() + valor);
+		}
+	}
+
+	public boolean comprar(double valor) {
+		
+		if (valor <= getSaldo()) {
+			setSaldo(valor);
+			return true;
+		} else {
+			
+			return false;
+		}
+		
+	}
+	
+}

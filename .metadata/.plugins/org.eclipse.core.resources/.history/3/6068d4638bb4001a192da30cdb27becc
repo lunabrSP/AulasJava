@@ -1,0 +1,67 @@
+
+public class conta {
+
+		protected String NomeTitular;
+		protected String CPf;
+		protected int NumeroConta;
+		protected float Saldo;
+		
+		public conta(String nomeTitular, String cPf, int numeroConta, float saldo) {
+			super();
+			this.NomeTitular = nomeTitular;
+			this.CPf = cPf;
+			this.NumeroConta = numeroConta;
+			this.Saldo = saldo;
+		}
+
+		protected String getNomeTitular() {
+			return NomeTitular;
+		}
+
+		protected void setNomeTitular(String nomeTitular) {
+			NomeTitular = nomeTitular;
+		}
+
+		protected String getCPf() {
+			return CPf;
+		}
+
+		protected void setCPf(String cPf) {
+			CPf = cPf;
+		}
+
+		protected int getNumeroConta() {
+			return NumeroConta;
+		}
+
+		protected void setNumeroConta(int numeroConta) {
+			NumeroConta = numeroConta;
+		}
+
+		protected float getSaldo() {
+			return Saldo;
+		}
+
+		protected void setSaldo(float saldo) {
+			Saldo = saldo;
+		}
+		
+		public boolean debitar (float valor) {
+			
+			if (valor  <= saldo) {
+				
+					saldo = saldo - valor;
+					return true;
+				
+			}
+			
+			return  false;
+			
+		}
+		
+		public void creditar (float valor) {
+			
+			saldo = saldo + valor;
+			
+		}
+}

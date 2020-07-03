@@ -1,0 +1,9 @@
+package Model;
+
+public class Comissionado {
+
+	public Comissionado() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

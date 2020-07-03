@@ -1,0 +1,34 @@
+package Model;
+
+
+
+public abstract class Funcionario {
+
+	protected String Nome;
+	protected int numRegistro;
+	
+	public Funcionario(String nome, int numRegistro) {
+		this.Nome = nome;
+		this.numRegistro = numRegistro;
+	}
+
+	public abstract float calculaSalario();
+	
+	protected String getNome() {
+		return Nome;
+	}
+
+	protected void setNome(String nome) {
+		Nome = nome;
+	}
+
+	protected int getNumRegistro() {
+		return numRegistro;
+	}
+
+	protected void setNumRegistro(int numRegistro) {
+		this.numRegistro = numRegistro;
+	}
+
+	
+}

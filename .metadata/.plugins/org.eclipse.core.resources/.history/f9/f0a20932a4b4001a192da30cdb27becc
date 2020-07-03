@@ -1,0 +1,8 @@
+
+public class CartaoCashBack extends CartaoPP{
+
+	public CartaoCashBack() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

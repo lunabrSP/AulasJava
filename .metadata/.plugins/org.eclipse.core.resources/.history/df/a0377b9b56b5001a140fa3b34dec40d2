@@ -1,0 +1,15 @@
+package Model;
+
+public class Horista extends Funcionario {
+
+	private float valorHora;
+	private int numeroHoras;
+	
+	public Horista(int numRegistro, String nomeFunc, float RvalorHora, int RnumeroHoras) {
+		super(numRegistro, nomeFunc);
+		this.valorHora = RvalorHora;
+		this.numeroHoras = RnumeroHoras;
+	}
+	
+	
+}

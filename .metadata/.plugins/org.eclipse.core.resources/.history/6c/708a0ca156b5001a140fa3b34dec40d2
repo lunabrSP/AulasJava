@@ -1,0 +1,36 @@
+package Model;
+
+public class Horista extends Funcionario {
+
+	private float valorHora;
+	private int numeroHoras;
+	
+	public Horista(int numRegistro, String nomeFunc, float RvalorHora, int RnumeroHoras) {
+		super(numRegistro, nomeFunc);
+		this.valorHora = RvalorHora;
+		this.numeroHoras = RnumeroHoras;
+	}
+
+	public float calculaSalario() {
+		
+		return valorHora * numeroHoras;
+		
+	}
+	
+	private float getValorHora() {
+		return valorHora;
+	}
+
+	private void setValorHora(float valorHora) {
+		this.valorHora = valorHora;
+	}
+
+	private int getNumeroHoras() {
+		return numeroHoras;
+	}
+
+	private void setNumeroHoras(int numeroHoras) {
+		this.numeroHoras = numeroHoras;
+	}
+	
+}

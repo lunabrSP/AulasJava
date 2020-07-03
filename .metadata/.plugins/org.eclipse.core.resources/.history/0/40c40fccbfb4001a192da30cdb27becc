@@ -1,0 +1,28 @@
+
+public class QuestaoComDica extends QuestaoSimples{
+
+	protected String Dica;
+
+	protected QuestaoComDica(String enunciado, String resposta, String Dica) {
+		super(enunciado, resposta);
+		this.Dica = Dica;
+	}
+
+	protected String getDica() {
+		return Dica;
+	}
+
+	protected void setDica(String dica) {
+		Dica = dica;
+	}
+
+	public String aplicarQuestao(String Resposta) {
+	
+		System.out.println("\nA dica dessa respostas e: "+ this.getDica());
+
+		return aplicarQuestao(Resposta);
+	}
+	
+	
+		
+}

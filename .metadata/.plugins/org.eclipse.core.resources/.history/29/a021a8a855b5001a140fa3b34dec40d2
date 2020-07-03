@@ -1,0 +1,14 @@
+package Model;
+
+public class Comissionado extends Funcionario {
+
+	private float salarioBase;
+	private float comissao;
+	
+	public Comissionado(int numRegistro, String nomeFunc, float salarioBase, float comissao) {
+		super(numRegistro, nomeFunc);
+	
+	}
+	
+		
+}

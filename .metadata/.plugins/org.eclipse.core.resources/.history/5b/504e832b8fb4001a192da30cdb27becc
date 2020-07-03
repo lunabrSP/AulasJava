@@ -1,0 +1,19 @@
+
+public class Bank {
+
+	public static void main(String[] args) {
+
+		conta CN1 = new conta("Raphael", "305.678.088-82", 040452, 1000);
+		ContaEspecial CE1 = new ContaEspecial("Leticia", "438.088.099.36", 134228, 1000, 500);
+		
+		if (CN1.debitar(300)) {
+			System.out.println("\nDebito efetuado com sucesso na conta normal");
+		}
+		if (CE1.debitar(1300)) {
+			System.out.println("\nDebito efetuado com sucesso na conta especial");
+		}
+		
+
+	}
+
+}

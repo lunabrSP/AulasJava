@@ -1,0 +1,9 @@
+package Model;
+
+public class Chefe extends Funcionario {
+
+	public Chefe() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

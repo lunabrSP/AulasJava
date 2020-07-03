@@ -1,0 +1,13 @@
+package Model;
+
+import Model.Chefe;
+import Model.Funcionario;
+Import Model.Comissionado;
+
+public class Comissionado {
+
+	public Comissionado() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

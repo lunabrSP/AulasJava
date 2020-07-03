@@ -1,0 +1,39 @@
+
+public class QuestaoSimples {
+
+	protected String Enunciado;
+	protected String Resposta;
+
+	protected QuestaoSimples(String enunciado, String resposta) {
+		Enunciado = enunciado;
+		Resposta = resposta;
+	}
+
+	protected String getResposta() {
+		return Resposta;
+	}
+
+	protected void setResposta(String resposta) {
+		Resposta = resposta;
+	}
+
+	protected String getEnunciado() {
+		return Enunciado;
+	}
+
+	protected void setEnunciado(String enunciado) {
+		Enunciado = enunciado;
+	}
+
+	public String aplicarQuestao(String Resposta) {
+		if (this.corrigir(Resposta)==true) {
+			return "Parabens";
+		}
+		else { return "Errou!!";	
+		}
+	}
+
+	public boolean corrigir(String RespostaDigitada) {
+		return RespostaDigitada.equals(this.getResposta());
+	}
+}

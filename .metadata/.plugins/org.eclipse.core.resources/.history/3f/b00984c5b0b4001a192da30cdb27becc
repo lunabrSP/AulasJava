@@ -1,0 +1,30 @@
+
+public class QuestaoSimples {
+
+	protected String Enunciado;
+	protected String Resposta;
+	public static final int SIMPlES = 0; 
+
+	protected QuestaoSimples(String enunciado, String resposta) {
+		Enunciado = enunciado;
+		Resposta = resposta;
+	}
+
+	protected String getResposta() {
+		return Resposta;
+	}
+
+	protected void setResposta(String resposta) {
+		Resposta = resposta;
+	}
+
+	protected String getEnunciado() {
+		return Enunciado;
+	}
+	
+	public string aplicarQuestao () {
+		System.out.println("\nQuestao: " + getEnunciado());
+		
+	}
+	
+}

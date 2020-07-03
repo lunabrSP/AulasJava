@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Prova {
+
+	public static void main(String[] args) {
+		
+		QuestaoSimples Questao[] = new QuestaoSimples[3];
+		
+		("Qual é a cor do Sol?", "Amarelo"); 
+		
+	}
+
+}

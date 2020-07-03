@@ -1,0 +1,12 @@
+
+public class QuestaoSimples {
+
+	
+	protected String Enunciado;
+	protected String Resposta;
+	
+	public QuestaoSimples() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

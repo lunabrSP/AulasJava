@@ -1,0 +1,9 @@
+package Model;
+
+public class Empreiteiro {
+
+	public Empreiteiro() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

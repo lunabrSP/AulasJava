@@ -1,0 +1,15 @@
+
+public class QuestaoEscolhas extends QuestaoSimples {
+
+	protected String[] Escolhas = new String[4];
+
+	protected QuestaoEscolhas(String enunciado, String resposta, String Alternativa1, String Alternativa2, String Alternativa3, String Alternativa4) {
+		super(enunciado, resposta);
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+}

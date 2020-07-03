@@ -1,0 +1,13 @@
+
+public class ContaEspecial extends conta {
+
+	private float Limite;
+	
+	public ContaEspecial(String titular, String cpf, int nc, float saldo, float limite) {
+		
+		super()
+		
+		
+	}
+
+}

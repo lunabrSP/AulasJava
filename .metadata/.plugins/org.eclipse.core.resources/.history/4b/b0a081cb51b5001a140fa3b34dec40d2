@@ -1,0 +1,10 @@
+package Model;
+
+
+
+public abstract class Funcionario {
+
+	protected String Nome;
+	protected int numRegistro;
+	
+}

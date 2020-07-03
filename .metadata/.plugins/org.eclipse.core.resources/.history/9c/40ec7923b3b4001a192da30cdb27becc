@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class QuestaoSimples {
+
+	protected String RespostaDada;
+	protected String Enunciado;
+	protected String Resposta;
+	public static final int SIMPLES = 0;
+
+	protected QuestaoSimples(String enunciado, String resposta) {
+		Enunciado = enunciado;
+		Resposta = resposta;
+	}
+
+	protected String getRespostaDada() {
+		return RespostaDada;
+	}
+
+	protected void setRespostaDada(String respostaDada) {
+		RespostaDada = respostaDada;
+	}
+
+	protected String getResposta() {
+		return Resposta;
+	}
+
+	protected void setResposta(String resposta) {
+		Resposta = resposta;
+	}
+
+	protected String getEnunciado() {
+		return Enunciado;
+	}
+
+	protected void setEnunciado(String enunciado) {
+		Enunciado = enunciado;
+	}
+
+	public String aplicarQuestao(String Pergunta, String Resposta) {
+
+		String respostaComparar = "";
+
+		Scanner GetTeclado = new Scanner(System.in);
+
+		setEnunciado(Pergunta);
+		setResposta(Resposta);
+
+		System.out.println("\nQuestao: " + getEnunciado());
+		System.out.println("\nPor favor, digite a resposta");
+
+		respostaComparar = GetTeclado.nextLine();
+		respostaComparar = GetTeclado.nextLine();
+
+		setRespostaDada(respostaComparar);
+		
+	}
+
+	public boolean corrigir(String Resposta, int Tipo) {
+		
+		if (Tipo == SIMPLES) { 
+			
+			if (Resposta.equals(this.getRespostaDada())) {
+				return true;
+			}
+			else return false;
+			
+			
+		}
+		
+	}
+}

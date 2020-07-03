@@ -1,0 +1,9 @@
+package Model;
+
+public class Horista extends Funcionario {
+
+	public Horista() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

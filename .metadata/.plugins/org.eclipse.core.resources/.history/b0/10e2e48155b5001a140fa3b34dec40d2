@@ -1,0 +1,9 @@
+package Model;
+
+public class Comissionado extends Funcionario {
+
+	public Comissionado() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

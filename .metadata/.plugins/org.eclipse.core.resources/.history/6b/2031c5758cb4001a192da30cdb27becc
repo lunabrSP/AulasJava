@@ -1,0 +1,32 @@
+
+public class conta {
+
+		protected String NomeTitular;
+		protected String CPf;
+		protected int NumeroConta;
+		protected float Saldo;
+		
+		public conta(String nomeTitular, String cPf, int numeroConta, float saldo) {
+			super();
+			this.NomeTitular = nomeTitular;
+			this.CPf = cPf;
+			this.NumeroConta = numeroConta;
+			this.Saldo = saldo;
+		}
+
+		public boolean debitar (float valor) {
+			
+			if (valor  <= Saldo) {
+					Saldo = Saldo - valor;
+					return true;
+			}
+			
+			return  false;
+			
+		}
+		
+		public void creditar (float valor) {
+			Saldo = Saldo + valor;
+			
+		}
+}

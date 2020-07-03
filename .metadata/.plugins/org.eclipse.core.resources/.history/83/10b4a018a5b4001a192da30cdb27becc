@@ -1,0 +1,31 @@
+
+public class AppCartao {
+
+	public static void main(String[] args) {
+
+		CartaoPP Cartao1 = new CartaoPP("55360888798443", "Raphael da S Luna", 28, 11, 2000);
+		
+		System.out.println("\nCartao criado");
+		
+		System.out.println("\nSaldo atual do cartao [" + Cartao1.getSaldo() + "]");
+		
+		Cartao1.adcionarCredito(1700);
+		
+		System.out.println("\nSaldo atual do cartao [" + Cartao1.getSaldo() + "]");
+		
+		if (Cartao1.comprar(2000) == true) { 
+			System.out.println("\nSaldo atual do cartao [" + Cartao1.getSaldo() + "]");}
+		else { System.out.println("\nCompra negada por saldo"); }
+		
+
+		if (Cartao1.comprar(5000) == true) { 
+			System.out.println("\nSaldo atual do cartao [" + Cartao1.getSaldo() + "]");}
+		else { System.out.println("\nCompra negada por saldo"); }
+		
+		if (Cartao1.comprar(200) == true) { 
+			System.out.println("\nSaldo atual do cartao [" + Cartao1.getSaldo() + "]");}
+		else { System.out.println("\nCompra negada por saldo"); }
+		
+	}
+
+}

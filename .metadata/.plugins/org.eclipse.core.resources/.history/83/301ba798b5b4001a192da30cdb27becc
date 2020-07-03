@@ -1,0 +1,10 @@
+
+public class QuestaoEscolhas extends QuestaoSimples {
+
+	protected String[] Escolhas = new String[4];
+	
+	public QuestaoEscolhas() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

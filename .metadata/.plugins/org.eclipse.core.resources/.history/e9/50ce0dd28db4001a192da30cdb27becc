@@ -1,0 +1,12 @@
+
+public class ContaEspecial extends conta {
+
+	private float Limite;
+	
+	public ContaEspecial() {
+		
+		
+		
+	}
+
+}

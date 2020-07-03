@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class QuestaoSimples {
+
+	protected String Enunciado;
+	protected String Resposta;
+	public static final int SIMPlES = 0; 
+
+	protected QuestaoSimples(String enunciado, String resposta) {
+		Enunciado = enunciado;
+		Resposta = resposta;
+	}
+
+	protected String getResposta() {
+		return Resposta;
+	}
+
+	protected void setResposta(String resposta) {
+		Resposta = resposta;
+	}
+
+	protected String getEnunciado() {
+		return Enunciado;
+	}
+	
+		protected void setEnunciado(String enunciado) {
+		Enunciado = enunciado;
+	}
+
+	public string aplicarQuestao (String Pergunta, String Resposta) {
+		
+		Scanner GetTeclado = new Scanner (System.in);
+		
+		setEnunciado(Pergunta);
+		setResposta(Resposta);
+		
+		
+		
+		System.out.println("\nQuestao: " + getEnunciado());
+		System.out.println("\nPor favor, digite a resposta");
+		
+		
+		
+	}
+	
+}

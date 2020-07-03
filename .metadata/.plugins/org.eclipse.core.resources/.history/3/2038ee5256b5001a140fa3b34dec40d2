@@ -1,0 +1,14 @@
+package Model;
+
+public class Horista extends Funcionario {
+
+	private float valorHora;
+	private int numeroHoras;
+	
+	public Horista(int numRegistro, String nomeFunc, float RvalorHora, float RnumeroHoras) {
+		super(numRegistro, nomeFunc);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

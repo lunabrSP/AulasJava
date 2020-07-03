@@ -1,0 +1,12 @@
+
+public class QuestaoComDica extends QuestaoSimples{
+
+	protected String Dica;
+
+	protected QuestaoComDica(String enunciado, String resposta, Sting Dica) {
+		super(enunciado, resposta);
+		this.Dica = Dica;
+	}
+	
+	
+}

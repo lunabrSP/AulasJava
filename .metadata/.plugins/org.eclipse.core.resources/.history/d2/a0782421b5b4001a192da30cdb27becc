@@ -1,0 +1,10 @@
+
+public class QuestaoComDica extends QuestaoSimples{
+
+	protected String Dica;
+	
+	public QuestaoComDica() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

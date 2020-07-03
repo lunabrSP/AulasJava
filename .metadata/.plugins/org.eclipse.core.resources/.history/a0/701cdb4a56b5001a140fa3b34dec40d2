@@ -1,0 +1,8 @@
+package Model;
+
+public class Horista extends Funcionario {
+
+	private float valorHora;
+	private int numeroHoras;
+	
+}
